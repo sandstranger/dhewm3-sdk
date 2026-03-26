@@ -605,7 +605,6 @@ if(BASE)
 
 	source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} PREFIX neo FILES ${src_game})
 
-	set_target_properties(base PROPERTIES PREFIX "")
 	set_target_properties(base PROPERTIES COMPILE_DEFINITIONS "${BASE_DEFS}")
 	target_include_directories(base PRIVATE "${CMAKE_SOURCE_DIR}/game")
 	set_target_properties(base PROPERTIES LINK_FLAGS "${ldflags}")
@@ -637,7 +636,6 @@ if(D3XP)
 
 	source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} PREFIX neo FILES ${src_d3xp})
 
-	set_target_properties(d3xp PROPERTIES PREFIX "")
 	set_target_properties(d3xp PROPERTIES COMPILE_DEFINITIONS "${D3XP_DEFS}")
 	target_include_directories(d3xp PRIVATE "${CMAKE_SOURCE_DIR}/d3xp")
 	set_target_properties(d3xp PROPERTIES LINK_FLAGS "${ldflags}")
