@@ -18,6 +18,7 @@ if(NOT MSVC) # GCC/clang or compatible, hopefully
 endif()
 
 add_definitions(-D_DENTONMOD)
+add_definitions(-D_WATER_PHYSICS)
 
 set(src_game_mod
 	# add additional .cpp files of your mod in game/
