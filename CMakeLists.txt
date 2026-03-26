@@ -17,6 +17,8 @@ if(NOT MSVC) # GCC/clang or compatible, hopefully
 	option(ASAN		"Enable GCC/Clang Adress Sanitizer (ASan)" OFF) # TODO: MSVC might also support this, somehow?
 endif()
 
+add_definitions(-D_DENTONMOD)
+
 set(src_game_mod
 	# add additional .cpp files of your mod in game/
 	# (that you added to the ones already existant in the SDK/in dhewm3)
